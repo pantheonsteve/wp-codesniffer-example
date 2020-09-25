@@ -69,6 +69,8 @@ jobs:
           keys:
             - composer-cache-{{ checksum "composer.lock" }}
             - composer-cache-
+            
+      - run: echo "Run the Static Tests"
 
       - run:
           # Set TERMINUS_ENV and related environment variables.
